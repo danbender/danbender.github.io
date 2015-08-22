@@ -1,7 +1,6 @@
-html, input {
+html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #2e2e2e;
-  font-weight: normal;
   line-height: 1.6em;
 }
 
@@ -51,17 +50,6 @@ h1 {
   line-height: 1em;
 }
 
-h2 {
-  font-size: 2.5em;
-  letter-spacing: -0.06em;
-  margin: 0 0 0.4em;
-  line-height: 1em;
-}
-
-.small {
-  font-size: 0.8em;
-}
-
 p {
   max-width: 43em;
 }
@@ -76,14 +64,12 @@ a {
 }
 
 a, a:visited {
-  /*color: #c00;*/
   color: rgba(84,163,238,1);
   padding: 0;
   text-decoration: none;
 }
 
 a:hover {
-  /*background: rgba(204,0,0,0.05);*/
   background: rgba(109,179,242,0.2);
 }
 
@@ -127,7 +113,6 @@ a:hover {
   animation-delay: 0.2s;
 }
 
-
 .container-animate {
   -webkit-animation-name: container-animate;
   animation-name: container-animate;
@@ -154,9 +139,17 @@ a:hover {
   }
 }
 
+/* Floating Action Button */
 
-@media all and (max-width: 40em) {
-  .progress-bar { margin-bottom: 20px; }
-  h1 {font-size:3em;}
+#menu a {
+  color: #fff;
 }
 
+#menu a:hover {
+  background: black;
+}
+
+@media all and (max-width: 40em) {
+  .progress-bar { margin-bottom: 10px; }
+  h1 {font-size:3em;}
+}
