@@ -103,7 +103,7 @@ a:hover {
 .container {
   margin: 0 auto;
   max-width: 35em;
-  padding: 1em 2em;
+  padding: 1em 2em 4em 2em;
 
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
@@ -146,10 +146,11 @@ a:hover {
 }
 
 #menu a:hover {
-  background: black;
+  background: rgba(109,179,242,1);
 }
 
 @media all and (max-width: 40em) {
   .progress-bar { margin-bottom: 10px; }
-  h1 {font-size:3em;}
+  h1 {font-size:2em;}
 }
+
