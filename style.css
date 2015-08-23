@@ -70,7 +70,8 @@ a, a:visited {
 }
 
 a:hover {
-  background: rgba(109,179,242,0.2);
+  /*background: rgba(109,179,242,0.2);*/
+  background: rgba(26, 214, 253, 0.25);
 }
 
 
@@ -146,7 +147,7 @@ a:hover {
 }
 
 #menu a:hover {
-  /*background: rgba(109,179,242,1);*/
+  background: rgba(26, 214, 253, 0.8);
 }
 
 @-webkit-keyframes bounceInUp {
@@ -278,7 +279,7 @@ a:hover {
 }
 
 .mfb-component__button--main:hover {
-  background-color: #007AFF;
+  background-color: #007AFF !important;
 }
 
 .mfb-component__list {
