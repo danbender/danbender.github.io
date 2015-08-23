@@ -11,6 +11,7 @@ body {
   margin:0px;
   padding:0px;
   outline: none;
+  position: relative;
 
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -249,18 +250,15 @@ a:hover {
   box-sizing: inherit;
 }
 
-/*------------------------------------*\
-    #BASE | Modifiers
-\*------------------------------------*/
+/*#BASE | Modifiers*/
 
 .mfb-component--br {
   right: 0;
   bottom: 0;
 }
 
-/*------------------------------------*\
-    #BUTTONS | Base
-\*------------------------------------*/
+/*#BUTTONS | Base*/
+
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
   background-color: #007AFF;
   display: inline-block;
@@ -320,9 +318,8 @@ a:hover {
   transform: scale(1) rotate(0deg);
 }
 
-/*------------------------------------*\
-    #BUTTONS | Modifiers
-\*------------------------------------*/
+/*#BUTTONS | Modifiers*/
+
 .mfb-component__button--main {
   height: 56px;
   width: 56px;
@@ -362,9 +359,7 @@ a:hover {
 [data-mfb-state="open"] .mfb-component__main-icon--active {
   opacity: 1; }
 
-/*------------------------------------*\
-    #BUTTONS | Animations
-\*------------------------------------*/
+/*#BUTTONS | Animations*/
 
 .mfb-component--tl.mfb-slidein-spring .mfb-component__list li,
 .mfb-component--tr.mfb-slidein-spring .mfb-component__list li {
@@ -458,6 +453,117 @@ a:hover {
 .mfb-component--br.mfb-slidein-spring[data-mfb-state="open"] .mfb-component__list li:nth-child(5) {
   -webkit-transform: translateY(-350px);
   transform: translateY(-350px);
+}
+
+/* Imprint Modal */
+
+.modal-link {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: $modal-delay;
+          transition-delay: $modal-delay;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  max-width: 600px;
+  padding: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  padding: 2.4rem;
+  background: #ffebee;
+  background-clip: padding-box;
+  text-align: center;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.modal__content h3 {
+  font-size: 1em;
+}
+
+.modal__content--active {
+  opacity: 1;
+}
+.modal__close {
+  z-index: 1100;
+  text-align: right;
+  cursor: pointer;
+}
+.modal__trigger {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+
+  line-height: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffebee;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Media Queries */
