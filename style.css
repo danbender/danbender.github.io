@@ -67,14 +67,13 @@ a {
 }
 
 a, a:visited {
-  color: #007AFF;
+  color: #34aadc;
   padding: 0;
   text-decoration: none;
 }
 
 a:hover {
-  /*background: rgba(109,179,242,0.2);*/
-  background: rgba(26, 214, 253, 0.25);
+  background: rgba(109,179,242,0.2);
 }
 
 /* Progress Bar */
@@ -152,7 +151,7 @@ a:hover {
 }
 
 #menu a:hover {
-  background: rgba(26, 214, 253, 0.8);
+  background: #5ac8fa;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -268,7 +267,7 @@ a:hover {
     #BUTTONS | Base
 \*------------------------------------*/
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #007AFF;
+  background-color: #34aadc;
   display: inline-block;
   position: relative;
   border: none;
@@ -284,7 +283,7 @@ a:hover {
 }
 
 .mfb-component__button--main:hover {
-  background-color: #007AFF !important;
+  background-color: #5ac8fa !important;
 }
 
 .mfb-component__list {
