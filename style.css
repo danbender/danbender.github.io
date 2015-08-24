@@ -42,16 +42,21 @@ body {
 
 /* Typography */
 
-h1 {
-  font-size: 4em;
+h2 {
+  font-size: 3em;
   letter-spacing: -0.02em;
   margin: 0 0 0.2em;
   line-height: 1em;
 }
 
 p {
-  max-width: 43em;
+  font-size: 1em;
 }
+
+.intro {
+  font-size: 1.5em;
+}
+
 
 /* Link */
 
