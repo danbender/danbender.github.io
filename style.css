@@ -80,6 +80,7 @@ a:hover {
 /* Progress Bar */
 
 .progress-bar {
+  background: linear-gradient(to right,  rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +89,6 @@ a:hover {
   height:5px;
   background-size: auto 200%;
   background-position: 0 100%;
-  background: linear-gradient(to right,  rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
   animation: gradient 4s infinite;
   animation-fill-mode:forwards;
   animation-timing-function: linear;
