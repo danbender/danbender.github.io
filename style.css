@@ -1,13 +1,13 @@
 html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: rgba(0,0,0,0.7);
+  color: #323b43;
   line-height: 1.6em;
 }
 
 body {
   height: 100%;
   width: 100%;
-  background: #f3f3f3;
+  background: #fff;
   margin:0px;
   padding:0px;
   outline: none;
@@ -42,12 +42,13 @@ body {
 
 /* Typography */
 
-h2 {
+h1 {
   font-size: 3em;
   font-weight: 400;
   letter-spacing: -0.02em;
   margin: 0 0 0.2em;
   line-height: 1em;
+  color: #323b43;
 }
 
 p {
@@ -56,6 +57,7 @@ p {
 
 .intro {
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 /* Link */
@@ -68,19 +70,19 @@ a {
 }
 
 a, a:visited {
-  color: #34aadc;
+  color: #168eea;
   padding: 0;
   text-decoration: none;
 }
 
 a:hover {
-  background: rgba(109,179,242,0.2);
+  background: rgba(22,142,234,0.3);
 }
 
 /* Progress Bar */
 
 .progress-bar {
-  background: linear-gradient(to right,  rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
+  background: linear-gradient(to right, rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
   position: fixed;
   top: 0;
   left: 0;
@@ -152,7 +154,10 @@ a:hover {
 }
 
 #menu a:hover {
-  background: #5ac8fa;
+  background: linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
+  background: -webkit-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
+  background: -moz-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
+  border-color: #137dcf;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -268,10 +273,10 @@ a:hover {
     #BUTTONS | Base
 \*------------------------------------*/
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #34aadc;
+  background: linear-gradient(to top,#1f93eb 0,#168eea 100%);
   display: inline-block;
   position: relative;
-  border: none;
+  /*border: 1px solid #137dcf;*/
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   cursor: pointer;
