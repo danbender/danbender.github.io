@@ -481,6 +481,11 @@ p a:hover {
     /* Media Queries */
 
     @media all and (max-width: 40em) {
+
+      html {
+        text-align: left;
+      }
+
       .container { margin-top: 10px; }
       h1 {font-size:2em;}
     }
