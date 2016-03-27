@@ -73,7 +73,7 @@ p a, p a:visited {
 }
 
 p a:hover {
-  border-bottom: 2px solid rgba(22,142,234,.6);
+  border-bottom: 1px solid rgba(22,142,234,.6);
   color: rgba(22,142,234,.6);
 }
 
