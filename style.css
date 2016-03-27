@@ -69,11 +69,10 @@ a, a:visited {
   text-decoration: none;
 }
 
+/*background: rgba(109,179,242,0.2);*/
 a:hover {
-  /*background: rgba(109,179,242,0.2);*/
   background: rgba(26, 214, 253, 0.25);
 }
-
 
 /* Progress Bar */
 
