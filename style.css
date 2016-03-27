@@ -1,13 +1,15 @@
 html {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #2e2e2e;
-  line-height: 1.6em;
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(50, 50, 50);
+  line-height: 1.75em;
+  font-weight: 300;
+  text-align: justify;
 }
 
 body {
   height: 100%;
   width: 100%;
-  background: #f3f3f3;
+  background: #fff;
   margin:0px;
   padding:0px;
   outline: none;
@@ -40,47 +42,55 @@ body {
   }
 }
 
-
 /* Typography */
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
+  font-weight: 300;
   letter-spacing: -0.02em;
   margin: 0 0 0.2em;
   line-height: 1em;
 }
 
 p {
-  max-width: 43em;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.intro {
+  font-size: 1.4em;
+  font-weight: 300;
 }
 
 /* Link */
 
-a {
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
 
-a, a:visited {
-  color: #007AFF;
+p a, p a:visited {
+  color: #222;
   padding: 0;
   text-decoration: none;
+  border-bottom: 1px dotted rgba(50,50,50,.5)
 }
 
-/*background: rgba(109,179,242,0.2);*/
 a:hover {
   background: rgba(26, 214, 253, 0.25);
+}
+
+p a:hover {
+  border-bottom: 1px solid rgba(22,142,234,.6);
+  color: rgba(22,142,234,.6);
 }
 
 /* Progress Bar */
 
 .progress-bar {
-  background: linear-gradient(to right,  rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
+  background: linear-gradient(to right, rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
   width:100%;
   height:5px;
-  margin-bottom: 100px;
   background-size: auto 200%;
   background-position: 0 100%;
   animation: gradient 4s infinite;
@@ -102,9 +112,9 @@ a:hover {
 
 .container {
   margin: 0 auto;
+  margin-top: 130px;
   max-width: 35.5em;
   padding: 1em 2em 4em 2em;
-
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
   -webkit-animation-fill-mode: both;
@@ -146,7 +156,10 @@ a:hover {
 }
 
 #menu a:hover {
-  background: rgba(26, 214, 253, 0.8);
+  /*background: linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
+  background: -webkit-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
+  background: -moz-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);*/
+  border-color: #137dcf;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -233,9 +246,9 @@ a:hover {
  * By: Nobita
  * Repo and docs: https://github.com/nobitagit/material-floating-button
  * License: MIT
-*/
+ */
 
-.mfb-component, .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
+ .mfb-component, .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
   box-sizing: border-box;
   margin: 25px;
   position: fixed;
@@ -251,106 +264,126 @@ a:hover {
 
 /*------------------------------------*\
     #BASE | Modifiers
-\*------------------------------------*/
+    \*------------------------------------*/
 
-.mfb-component--br {
-  right: 0;
-  bottom: 0;
-}
+    .mfb-component--br {
+      right: 0;
+      bottom: 0;
+    }
 
 /*------------------------------------*\
     #BUTTONS | Base
-\*------------------------------------*/
-.mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #007AFF;
-  display: inline-block;
-  position: relative;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-  position: relative;
-  -webkit-user-drag: none;
-  font-weight: bold;
-  color: #f1f1f1;
-}
+    \*------------------------------------*/
+    .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
+      background: rgba(22,142,234,.8);
+      display: inline-block;
+      position: relative;
+      /*border: 1px solid #137dcf;*/
+      border-radius: 50%;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      position: relative;
+      -webkit-user-drag: none;
+      font-weight: 400;
+      color: #f1f1f1;
+    }
 
-.mfb-component__button--main:hover {
-  background-color: #007AFF !important;
-}
+    .mfb-component__button--main:hover {
+      background-color: rgba(22,142,234,.6) !important;
+    }
 
-.mfb-component__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    .mfb-component__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .mfb-component__list > li > a:hover {
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
 
-.mfb-component__list > li {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 1px;
-  padding: 10px 0;
-  margin: -10px 0;
-}
+    .mfb-component__list > li > a:hover {
+      background: rgba(22,142,234,.6);
+    }
+    .mfb-component__list > li {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 1px;
+      padding: 10px 0;
+      margin: -10px 0;
+    }
 
-.mfb-component__icon, .mfb-component__main-icon--active,
-.mfb-component__main-icon--resting, .mfb-component__child-icon {
-  position: absolute;
-  font-size: 18px;
-  text-align: center;
-  line-height: 56px;
-  width: 100%;
-}
+    .mfb-component__icon, .mfb-component__main-icon--active,
+    .mfb-component__main-icon--resting, .mfb-component__child-icon {
+      position: absolute;
+      font-size: 18px;
+      text-align: center;
+      line-height: 56px;
+      width: 100%;
+    }
 
-.mfb-component__wrap {
-  padding: 25px;
-  margin: -25px;
-}
+    .mfb-component__wrap {
+      padding: 25px;
+      margin: -25px;
+    }
 
-[data-mfb-toggle="hover"]:hover .mfb-component__icon, [data-mfb-toggle="hover"]:hover .mfb-component__main-icon--active,
-[data-mfb-toggle="hover"]:hover .mfb-component__main-icon--resting, [data-mfb-toggle="hover"]:hover .mfb-component__child-icon,
-[data-mfb-state="open"] .mfb-component__icon,
-[data-mfb-state="open"] .mfb-component__main-icon--active,
-[data-mfb-state="open"] .mfb-component__main-icon--resting,
-[data-mfb-state="open"] .mfb-component__child-icon {
-  -webkit-transform: scale(1) rotate(0deg);
-  transform: scale(1) rotate(0deg);
-}
+    [data-mfb-toggle="hover"]:hover .mfb-component__icon, [data-mfb-toggle="hover"]:hover .mfb-component__main-icon--active,
+    [data-mfb-toggle="hover"]:hover .mfb-component__main-icon--resting, [data-mfb-toggle="hover"]:hover .mfb-component__child-icon,
+    [data-mfb-state="open"] .mfb-component__icon,
+    [data-mfb-state="open"] .mfb-component__main-icon--active,
+    [data-mfb-state="open"] .mfb-component__main-icon--resting,
+    [data-mfb-state="open"] .mfb-component__child-icon {
+      -webkit-transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg);
+    }
 
 /*------------------------------------*\
     #BUTTONS | Modifiers
 \*------------------------------------*/
-.mfb-component__button--main {
-  height: 56px;
-  width: 56px;
-  z-index: 20;
-}
 
-.mfb-component__button--child {
-  height: 56px;
-  width: 56px;
-}
+    .mfb-component__button--main {
+      height: 56px;
+      width: 56px;
+      z-index: 20;
+    }
 
-.mfb-component__main-icon--active,
-.mfb-component__main-icon--resting {
-  -webkit-transform: scale(1) rotate(360deg);
-  transform: scale(1) rotate(360deg);
-  -webkit-transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 1, 1);
-  transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
-}
+    .mfb-component__button--child {
+      height: 56px;
+      width: 56px;
+    }
 
-.mfb-component__child-icon,
-.mfb-component__child-icon {
-  line-height: 56px;
-  font-size: 18px;
-}
+    .mfb-component__main-icon--active,
+    .mfb-component__main-icon--resting {
+      -webkit-transform: scale(1) rotate(360deg);
+      transform: scale(1) rotate(360deg);
+      -webkit-transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 1, 1);
+      transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
+    }
 
-.mfb-component__main-icon--active {
-  opacity: 0;
-}
+    .mfb-component__child-icon,
+    .mfb-component__child-icon {
+      line-height: 56px;
+      font-size: 18px;
+    }
+
+    .mfb-component__main-icon--active {
+      opacity: 0; }
+
+      [data-mfb-toggle="hover"]:hover .mfb-component__main-icon,
+      [data-mfb-state="open"] .mfb-component__main-icon {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg); }
+        [data-mfb-toggle="hover"]:hover .mfb-component__main-icon--resting,
+        [data-mfb-state="open"] .mfb-component__main-icon--resting {
+          opacity: 0; }
+          [data-mfb-toggle="hover"]:hover .mfb-component__main-icon--active,
+          [data-mfb-state="open"] .mfb-component__main-icon--active {
+            opacity: 1; }
 
 /*------------------------------------*\
     #BUTTONS | Animations

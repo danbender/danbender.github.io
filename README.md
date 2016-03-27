@@ -1,1 +1,1 @@
-Personal website at danbender.net
+Personal website at www.danbender.net
