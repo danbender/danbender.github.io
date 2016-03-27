@@ -73,7 +73,7 @@ p a, p a:visited {
 }
 
 a:hover {
-  background: rgba(26, 214, 253, 0.25);
+  background: rgba(26, 214, 253, 0.05);
 }
 
 p a:hover {
