@@ -73,12 +73,12 @@ p a, p a:visited {
 }
 
 a:hover {
-  background: rgba(26, 214, 253, 0.05);
+  background: #EFF6FF;
 }
 
 p a:hover {
-  border-bottom: 1px solid rgba(22,142,234,.6);
-  color: rgba(22,142,234,.6);
+  border-bottom: 1px solid #5988C1;
+  color: #5988C1;
 }
 
 /* Progress Bar */
@@ -156,10 +156,7 @@ p a:hover {
 }
 
 #menu a:hover {
-  /*background: linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
-  background: -webkit-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);
-  background: -moz-linear-gradient(to top,#2d99ec 0,#2d99ec 100%);*/
-  border-color: #137dcf;
+  color: #5988C1;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -275,10 +272,9 @@ p a:hover {
     #BUTTONS | Base
     \*------------------------------------*/
     .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-      background: rgba(22,142,234,.8);
+      background: #5988C1;
       display: inline-block;
       position: relative;
-      /*border: 1px solid #137dcf;*/
       border-radius: 50%;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
       cursor: pointer;
@@ -291,7 +287,8 @@ p a:hover {
     }
 
     .mfb-component__button--main:hover {
-      background-color: rgba(22,142,234,.6) !important;
+      background-color: #EFF6FF !important;
+      color: #5988C1;
     }
 
     .mfb-component__list {
@@ -307,7 +304,8 @@ p a:hover {
     }
 
     .mfb-component__list > li > a:hover {
-      background: rgba(22,142,234,.6);
+      background: #EFF6FF;
+      color: #5988C1;
     }
     .mfb-component__list > li {
       display: block;
