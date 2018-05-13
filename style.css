@@ -68,9 +68,8 @@ p a:hover {
 
 .container {
   margin: 0 auto;
-  margin-top: 2.5vh;
+  margin-top: 5vh;
   max-width: 65vw;
-  padding: 1em 2em 4em 2em;
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
   -webkit-animation-fill-mode: both;
@@ -408,6 +407,6 @@ p a:hover {
 @media all and (max-width: 40em) {
   html { text-align: left; }
   h1 {font-size:2em;}
-  .container {width:85vw;margin-left:7.5vw; }
+  .container {width:90vw;margin-left:5vw; }
 
 }
