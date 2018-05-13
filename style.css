@@ -1,51 +1,28 @@
 html {
   font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: "SF UI Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
   color: rgb(50, 50, 50);
-  line-height: 1.75em;
+  line-height: 2em;
   font-weight: 300;
   text-align: justify;
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  background: #fff;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fbfbfb));
+  background: -webkit-linear-gradient(top,#fff 0,#fbfbfb 100%);
+  background: -o-linear-gradient(top,#fff 0,#fbfbfb 100%);
+  background: linear-gradient(180deg,#fff 0,#fbfbfb 100%);
   margin:0px;
   padding:0px;
   outline: none;
-
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Typography */
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.65em;
   font-weight: 300;
   letter-spacing: .1em;
 }
@@ -65,6 +42,10 @@ p {
   text-align: left;
 }
 
+.first-paragraph {
+  font-family: 'Merriweather';
+}
+
 /* Link */
 
 p a, p a:visited {
@@ -75,47 +56,20 @@ p a, p a:visited {
 }
 
 a:hover {
-  background: #EFF6FF;
+  background: #E3F2FD;
 }
 
 p a:hover {
-  border-bottom: 1px solid #5988C1;
-  color: #5988C1;
+  border-bottom: 1px solid #0336FF;
+  color: #0336FF;
 }
-
-/* Progress Bar */
-/*
-.progress-bar {
-background: linear-gradient(to right, rgba(109,179,242,1) 0%,rgba(26, 214, 253, 0.25) 43%,rgba(191,224,255,1) 61%,rgba(109,179,242,1) 84%);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 100000;
-width:100%;
-height:5px;
-background-size: auto 200%;
-background-position: 0 100%;
-animation: gradient 4s infinite;
-animation-fill-mode:forwards;
-animation-timing-function: linear;
-}
-
-@keyframes gradient {
-0% {
-background-position: 0 0;
-}
-
-100% {
-background-position: -200% 0;
-}
-}*/
 
 /* Main */
 
 .container {
   margin: 0 auto;
-  margin-top: 130px;
-  max-width: 35.5em;
+  margin-top: 2.5vh;
+  max-width: 65vw;
   padding: 1em 2em 4em 2em;
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
@@ -125,32 +79,6 @@ background-position: -200% 0;
   animation-delay: 0.2s;
 }
 
-.container-animate {
-  -webkit-animation-name: container-animate;
-  animation-name: container-animate;
-}
-
-@-webkit-keyframes container-animate {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-@keyframes container-animate {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Floating Action Button */
 
 #menu a {
@@ -158,7 +86,7 @@ background-position: -200% 0;
 }
 
 #menu a:hover {
-  color: #5988C1;
+  color: #0336FF;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -267,7 +195,7 @@ background-position: -200% 0;
 }
 
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background: #5988C1;
+  background: #0336FF;
   display: inline-block;
   position: relative;
   border-radius: 50%;
@@ -277,13 +205,13 @@ background-position: -200% 0;
   padding: 0;
   position: relative;
   -webkit-user-drag: none;
-  font-weight: 400;
+  font-weight: 300;
   color: #f1f1f1;
 }
 
 .mfb-component__button--main:hover {
-  background-color: #EFF6FF !important;
-  color: #5988C1;
+  background-color: #E3F2FD !important;
+  color: #0336FF;
 }
 
 .mfb-component__list {
@@ -299,8 +227,8 @@ background-position: -200% 0;
 }
 
 .mfb-component__list > li > a:hover {
-  background: #EFF6FF;
-  color: #5988C1;
+  background: #E3F2FD;
+  color: #0336FF;
 }
 .mfb-component__list > li {
   display: block;
