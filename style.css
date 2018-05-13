@@ -38,7 +38,7 @@ p {
 }
 
 .first-paragraph {
-  font-family: 'Merriweather';
+  font-family: 'Montserrat';
 }
 
 /* Link */
@@ -402,5 +402,5 @@ p a:hover {
 @media all and (max-width: 40em) {
   /* html { text-align: left; } */
   .container {max-width:90vw;width:90vw;margin-left:5vw;padding-bottom:10vh;}
-  .first-paragraph {font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 1.2em;font-weight: 400;}
+  .first-paragraph {font-size: 1.2em;font-weight: 400;}
 }
