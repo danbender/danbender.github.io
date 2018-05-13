@@ -403,4 +403,7 @@ p a:hover {
   /* html { text-align: left; } */
   .container {max-width:90vw;width:90vw;margin-left:5vw;padding-bottom:10vh;}
   .first-paragraph {font-size: 1.2em;font-weight: 400;}
+  .hidden-sm { display: none; }
 }
+
+/* font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; */
