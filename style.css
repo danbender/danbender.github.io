@@ -406,7 +406,8 @@ p a:hover {
 /* Media Queries */
 
 @media all and (max-width: 40em) {
-  /*.progress-bar { margin-bottom: 10px; }*/
+  html { text-align: left; }
   h1 {font-size:2em;}
   .container {margin-top:10px;}
+
 }
