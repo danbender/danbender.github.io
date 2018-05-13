@@ -408,6 +408,6 @@ p a:hover {
 @media all and (max-width: 40em) {
   html { text-align: left; }
   h1 {font-size:2em;}
-  .container {margin-top:10px;}
+  .container {width:85vw;margin-left:7.5vw; }
 
 }
