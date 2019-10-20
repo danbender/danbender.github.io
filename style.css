@@ -21,7 +21,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   max-width: 45ch;
-  padding: 2rem 1rem;
+  padding: 2rem;
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
   -webkit-animation-fill-mode: both;
@@ -375,7 +375,7 @@ p a:hover {
 
 @media all and (max-width: 40em) {
   /* html { text-align: left; } */
-  .container {max-width:90vw;width:90vw;margin-left:5vw;padding-bottom:10vh;}
+  .container {width:90vw;padding-left:5vw;padding-right:5vw;padding-bottom:10vh;overflow:hidden;}
   .first-paragraph {font-size: 1.2em;font-weight: 400;}
   .hidden-sm { display: none; }
 }
