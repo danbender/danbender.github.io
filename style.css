@@ -31,10 +31,12 @@ body {
 }
 
 p a, p a:visited {
+  font-weight: 600;
   color: #000;
   text-decoration: none;
   border-bottom: .2rem solid rgba(43,113,202,.4);
 }
+
 
 a:hover {
   background: #E3F2FD;
@@ -43,10 +45,6 @@ a:hover {
 p a:hover {
   border-bottom-color: #2b71ca;
   color:#2b71ca;
-}
-
-.name {
-  font-weight: 600;
 }
 
 /* Floating Action Button */
