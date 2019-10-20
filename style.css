@@ -1,70 +1,28 @@
 html {
-  font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* font-family: "SF UI Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
-  color: rgb(50, 50, 50);
+  font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",  "Open Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #000;
   line-height: 2em;
-  font-weight: 300;
-  text-align: justify;
-  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fbfbfb));
-  background: -webkit-linear-gradient(top,#fff 0,#fbfbfb 100%);
-  background: -o-linear-gradient(top,#fff 0,#fbfbfb 100%);
-  background: linear-gradient(180deg,#fff 0,#fbfbfb 100%);
-  margin:0px;
+  margin:0px auto;
   padding:0px;
   outline: none;
+  font-size: 1rem;
 }
 
-/* Typography */
-
-p {
-  font-size: 1.1em;
-  font-weight: 300;
-}
-
-.intro {
-  font-size: 1.1em;
-  font-weight: 700;
-  letter-spacing: 2.3px;
-  text-transform: uppercase;
-  color: rgba(50, 50, 50,.95);
-  margin-left: 0.5px;
-  text-align: left;
-}
-
-.first-paragraph {
-  font-family: 'Montserrat';
-}
-
-/* Link */
-
-p a, p a:visited {
-  color: #222;
-  padding: 0;
-  text-decoration: none;
-  border-bottom: 1px dotted rgba(50,50,50,.5)
-}
-
-a:hover {
-  background: #E3F2FD;
-}
-
-p a:hover {
-  border-bottom: 1px solid #0336FF;
-  color: #0336FF;
-}
-
-/* Main */
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
-  margin-top: 5vh;
-  max-width: 65vw;
+  max-width: 55ch;
+  min-height: 100vh;
+  padding: 2rem 1rem;
   -webkit-animation-duration: .9s;
   animation-duration: .9s;
   -webkit-animation-fill-mode: both;
@@ -73,6 +31,21 @@ p a:hover {
   animation-delay: 0.2s;
 }
 
+p a, p a:visited {
+  color: #000;
+  padding: 0;
+  text-decoration: none;
+  border-bottom: .2rem solid rgba(43,113,202,.4);
+}
+
+a:hover {
+  background: #E3F2FD;
+}
+
+p a:hover {
+  border-bottom-color: #2b71ca;
+  color:#2b71ca;
+}
 /* Floating Action Button */
 
 #menu a {
@@ -80,7 +53,7 @@ p a:hover {
 }
 
 #menu a:hover {
-  color: #0336FF;
+  color:#2b71ca;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -189,7 +162,7 @@ p a:hover {
 }
 
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background: #0336FF;
+  background:#2b71ca;
   display: inline-block;
   position: relative;
   border-radius: 50%;
@@ -205,7 +178,7 @@ p a:hover {
 
 .mfb-component__button--main:hover {
   background-color: #E3F2FD !important;
-  color: #0336FF;
+  color:#2b71ca;
 }
 
 .mfb-component__list {
@@ -222,7 +195,7 @@ p a:hover {
 
 .mfb-component__list > li > a:hover {
   background: #E3F2FD;
-  color: #0336FF;
+  color:#2b71ca;
 }
 .mfb-component__list > li {
   display: block;
