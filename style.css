@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 55ch;
+  max-width: 45ch;
   min-height: 100vh;
   padding: 2rem 1rem;
   -webkit-animation-duration: .9s;
