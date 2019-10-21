@@ -2,7 +2,7 @@ html {
   font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",  "Open Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: rgb(51, 51, 51);
   line-height: 2em;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   font-size: 20px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 p a, p a:visited {
-  font-weight: 600;
+  font-weight: 500;
   color: #000;
   text-decoration: none;
   border-bottom: .2rem solid rgba(43,113,202,.4);
@@ -46,6 +46,9 @@ p a:hover {
   border-bottom-color: #2b71ca;
   color:#2b71ca;
 }
+
+
+
 
 /* Floating Action Button */
 
@@ -371,6 +374,8 @@ p a:hover {
   transform: translateY(-350px);
 }
 
+
+
 /* Media Queries */
 
 @media all and (max-width: 40em) {
@@ -380,4 +385,48 @@ p a:hover {
   .hidden-sm { display: none; }
 }
 
-/* font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #27292D;
+
+  }
+
+  p {
+    color: rgba(255,255,255,.65);
+  }
+
+  p a, p a:visited {
+    color: rgba(255,255,255,.85);
+    border-bottom: .2rem solid rgba(255,255,255,.85);
+  }
+
+  p a:hover {
+    /* rgb(167,135,171); */
+    color: rgb(131,191,230);
+    border-bottom-color: rgb(131,191,230);
+    background: rgba(131,191,230,.2);
+  }
+
+  /* button */
+
+  #menu a {
+    color: #fff;
+  }
+
+  #menu a:hover {
+    color:rgb(131,191,230);
+  }
+
+  .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
+    background:rgb(131,191,230);
+    color: #f1f1f1;
+  }
+
+  .mfb-component__button--main:hover {
+    background-color: #E3F2FD !important;
+    color:rgb(131,191,230);
+  }
+}
+
+
