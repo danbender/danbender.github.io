@@ -393,7 +393,7 @@ p a:hover {
   }
 
   p {
-    color: rgba(255,255,255,.65);
+    color: rgba(156, 156, 156, 0.65);
   }
 
   p a, p a:visited {
